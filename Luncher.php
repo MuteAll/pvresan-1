@@ -1,6 +1,6 @@
 <?php
 
-define('BOT_TOKEN', '248070370:AAHslEYpX3hx3o9ElkgoYW4eWYP3ZaVgW7o');
+define('BOT_TOKEN', '248070370:AAEbGDTpscsnHU3kDUC3GCPPJ-eTa8dKMU4');
 define('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN.'/');
 
 function apiRequestWebhook($method, $parameters) {
@@ -222,7 +222,7 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "در حال ب
  https://telegram.me/storebot?start=PvResansazbot
 .";
     
-    $bot_url    = "https://api.telegram.org/bot248070370:AAHslEYpX3hx3o9ElkgoYW4eWYP3ZaVgW7o/"; 
+    $bot_url    = "https://api.telegram.org/bot248070370:AAEbGDTpscsnHU3kDUC3GCPPJ-eTa8dKMU4/"; 
     $url        = $bot_url . "sendMessage?chat_id=" . $chat_id ; 
 
 $post_fields = array('chat_id'   => $chat_id, 
@@ -304,7 +304,7 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "در حال ب
 برای ورود به ربات خود کلیک کنید 👇😃
 ";
     
-    $bot_url    = "https://api.telegram.org/bot248070370:AAHslEYpX3hx3o9ElkgoYW4eWYP3ZaVgW7o/"; 
+    $bot_url    = "https://api.telegram.org/bot248070370:AAEbGDTpscsnHU3kDUC3GCPPJ-eTa8dKMU4/"; 
     $url        = $bot_url . "sendMessage?chat_id=" . $chat_id ; 
 
 $post_fields = array('chat_id'   => $chat_id, 
