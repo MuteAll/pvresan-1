@@ -154,8 +154,10 @@ $pmembersid= explode("\n",$txxt);
 
         }
     }else if ($text == "Version") {
-      apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>Your PM Receiver bot</b>
-      <b>Thanks to arshia . By : @MR_Creed</b>"parse_mode"=>"html"));
+      apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>PvResansaz</b>
+<b>ver. 3.0</b>
+<code>Coded By</code>@Mr_Creed
+Copy Right 2016©","parse_mode"=>"html"));
     }
     else if ($matches[0] == "/update"&& strpos($matches[1], ":")) {
       
@@ -175,15 +177,15 @@ $pmembersid= explode("\n",$txxt);
         $phptext = file_get_contents('phptext.txt');
         $phptext = str_replace("**TOKEN**",$matches[1],$phptext);
         $phptext = str_replace("**ADMIN**",$chat_id,$phptext);
-        file_put_contents($id.'/pvresan.php',$phptext);
+        file_put_contents($id.'/PvResansaz.php',$phptext);
         file_get_contents('https://api.telegram.org/bot'.$matches[1].'$texttwebhook?url=');
-        file_get_contents('https://api.telegram.org/bot'.$matches[1].'/setwebhook?url=https://pvresansaz-mrcreed.rhcloud.com/Launcher.php'.$chat_id.'/pvresan.php');
+        file_get_contents('https://api.telegram.org/bot'.$matches[1].'/setwebhook?url=https://pvresansaz-mrcreed.rhcloud.com/Launcher.php'.$chat_id.'/PvResansaz.php');
 apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "🚀 ربات شما با مـوفقیت آپدیت شد ♻️"));
 
 
     }
     }
-    else if ($matches[0] != "/update"&& $matches[1]==""&&$chat_id != 1051763059) {
+    else if ($matches[0] != "/update"&& $matches[1]==""&&$chat_id != 107155421) {
       if (strpos($text, ":")) {
 apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "در حال برسی 🔃"));
     $url = "http://api.telegram.org/bot".$matches[0]."/getme";
@@ -211,13 +213,13 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "در حال ب
         $phptext = file_get_contents('phptext.txt');
         $phptext = str_replace("**TOKEN**",$text,$phptext);
         $phptext = str_replace("**ADMIN**",$chat_id,$phptext);
-        file_put_contents($token.$id.'/pvresan.php',$phptext);
+        file_put_contents($token.$id.'/PvResansaz.php',$phptext);
         file_get_contents('https://api.telegram.org/bot'.$text.'/setwebhook?url=');
-        file_get_contents('https://api.telegram.org/bot'.$text.'/setwebhook?url=https://pvresansaz-mrcreed.rhcloud.com.rhcloud.com/Launcher.php'.$chat_id.'/pvresan.php');
+        file_get_contents('https://api.telegram.org/bot'.$text.'/setwebhook?url=https://pvresansaz-mrcreed.rhcloud.com.rhcloud.com/Launcher.php'.$chat_id.'/PvResansaz.php');
     $unstalled = "ربات شما با موفقیت نصب شده است🚀 
 برای ورود به ربات خود کلیک کنید 👇😃
 به ربات ما امتیاز بدید  👇
- https://telegram.me/storebot?start=pvresanbot
+ https://telegram.me/storebot?start=PvResansazbot
 .";
     
     $bot_url    = "https://api.telegram.org/bot248070370:AAHslEYpX3hx3o9ElkgoYW4eWYP3ZaVgW7o/"; 
@@ -252,7 +254,7 @@ $output = curl_exec($ch);
 🔸ربات دوم = 5000ت ✔️
 
 🤖 در صورت تمایل به ساخت ربات های بیشتر به ایدی زیر پیام دهید.
-🚀 @Mr_Creed"));
+🚀@Mr_Creed"));
       }
     }
       
@@ -295,9 +297,9 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "در حال ب
         $phptext = file_get_contents('phptext.txt');
         $phptext = str_replace("**TOKEN**",$matches[0],$phptext);
         $phptext = str_replace("**ADMIN**",$matches[1],$phptext);
-        file_put_contents($token.$id.'/pvresan.php',$phptext);
+        file_put_contents($token.$id.'/PvResansaz.php',$phptext);
         file_get_contents('https://api.telegram.org/bot'.$matches[0].'/setwebhook?url=');
-        file_get_contents('https://api.telegram.org/bot'.$matches[0].'/setwebhook?url=https://pvresansaz-mrcreed.rhcloud.com/Launcher.php'.$id.'/pvresan.php');
+        file_get_contents('https://api.telegram.org/bot'.$matches[0].'/setwebhook?url=https://pvresansaz-mrcreed.rhcloud.com/Launcher.php'.$id.'/PvResansaz.php');
     $unstalled = "ربات شما با موفقیت نصب شده است🚀 
 برای ورود به ربات خود کلیک کنید 👇😃
 ";
@@ -326,10 +328,10 @@ $output = curl_exec($ch);
          apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "👾 شما قبلا یک ربات ثبت کرده اید  و قادر به ثبت ربات دوم نیستید.
 
 🔹هر نفر = یک ربات ✖️
-🔸ربات دوم = 2000 تومن ✔️
+🔸ربات دوم = 5000ت ✔️
 
 🤖 در صورت تمایل به ساخت ربات های بیشتر به ایدی زیر پیام دهید.
-🚀 @Mr_Creed"));
+🚀@Mr_Creed"));
       }
 
     }
@@ -378,5 +380,4 @@ if (!$update) {
 if (isset($update["message"])) {
   processMessage($update["message"]);
 }
-
 
